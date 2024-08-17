@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <!--Container-->
+    <div class="container">
+        <div class="box">
+            <div class="mainBox">
+                <h1 class="heading">PASSWORD GENERATOR</h1>
+            </div>
+
+            <div class="displayNcopy">
+                <input readonly class="passwordDisplay" placeholder="PASSWORD">
+
+                <button class="copyButton" id="copy">
+                    <span class="copyMsg "></span>
+                    <i class="fa-regular fa-copy"></i>
+                </button>
+            </div>
+
+        
+            <div class="inputContainer">
+                <div class="lengthPassword">
+                    <h1 >Password Length</h1>
+                    <h2 data-sliderNumber >10</h2>
+                </div>
+                
+                
+                <input class="range" type="range" name="" min="1" max="20" step="1" >
+                    
+                    <div class="check">
+                        <input type="checkbox" name="" id="uppercase">
+                        <label for="uppercase">Include Uppercase Letters</label>
+                    </div>
+                    
+                    <div class="check">
+                        <input type="checkbox" name="" id="lowercase">
+                        <label for="lowercase">Include Lowercase Letters</label>
+                    </div>
+
+                    <div class="check">
+                        <input type="checkbox" name="" id="numbers">
+                        <label for="numbers">Include Numbers</label>
+                    </div>
+
+                    <div class="check">
+                        <input type="checkbox" name="" id="symbols">
+                        <label for="symbols">Include Symbols</label>
+                    </div>
+                
+                <div class="Strength">
+                    <h1 >Strength</h1>
+                    <div id="indicator"></div>
+                </div>
+                
+                
+                <button class="getButton">Generate Password</button>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
