@@ -228,10 +228,24 @@
     transform: scale(0);
     transform-origin: bottom;
     transition: all 250ms ease-in-out;
+    z-index: 100;
 }
 .active {
     transform: scale(1);
 }
+
+.active::before {
+    content: ' ';
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    border: 5px solid darkmagenta;
+    transform: translateX(-50%);
+    rotate: 45deg;
+    border-color: #000, #0000, #0000, #0000;
+    z-index: 99;
+}
+
 
 
 @media (max-width: 450px) {
